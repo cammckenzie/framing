@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Framers</title>
+
+    <link rel='stylesheet' href='style.css'/>
+
+    <script src="js/map_data.js"></script>
+    <script src="js/map.js"></script>
+    <!-- Replace the value of the key parameter with your own API key. -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWNHftKlwn269gwyjyCA0bRQl31jDNpAM&callback=initMap"></script>
+</head>
+
+<div class="map_wrap">
+    <div id="map"></div>
+
+    <div class="bottom-grid-container">
+        <div class="input-grid-container">
+            <input type="range" min="1835" max="1900" value="1835" class="slider" id="yearSlider">
+            <div class="play" id="play"></div>
+        </div>
+
+        <div class="label-grid-container">
+            <div class="year-label" id="yearLabel"></div>
+        </div>
+
+        <!--<div>
+            <span>Count:</span> <span id="countLabel"><</span>
+        </div>-->
+    </div>
+</div>
